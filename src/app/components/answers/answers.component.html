@@ -1,0 +1,13 @@
+<ul class="collection with-header">
+  <li class="collection-header">
+    <h4>{{title}}</h4>
+  </li>
+  <li
+    class="collection-item"
+    *ngFor="let word of words"
+    [ngClass]="{incorrect: word?.correct === false}"
+  >
+    {{word.word}}
+  </li>
+
+</ul>
